@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Project</title>
+</head>
+<style>
+       #container{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        
+       }
+      #hexa{
+        height:35px;
+        width:150px;
+        margin:auto;
+        text-align:center;
+        font-size:18px;
+      }
+      #btn{
+        height:45px;
+        width:200px;
+        margin:auto;
+        cursor: pointer;
+        border-radius:10px;
+        background-color:black;
+        color:white;
+      }
+      #btn:hover{
+        background-color:white;
+        color:black;
+      }
+      body{
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+        background-color:black;
+        
+      }
+      h1{
+        text-shadow: 3px 3px 4px rgba(248, 244, 244, 0.5);
+        color:rgb(15, 14, 14);
+        
+      }
+      .inputBtn{
+        margin:auto;
+        display:flex;
+        gap:10px;
+      }
+      #copy{
+        width:50px;
+        font-size:17px;
+        border-radius:7px;
+        cursor: pointer;
+      }
+</style>
+<body id="root">
+
+
+      <div id="container">
+             <h1>My Country Name is Bangladesh .. I love Bangladesh</h1>
+
+              <div class="inputBtn">
+                <input type="text" readonly id="hexa">
+                <button id="copy" title="copeid">copy</button>
+              </div>
+
+             <button id="btn">Love Country</button>
+      </div>
+
+
+
+
+
+    <script src="hexa.js"></script>
+    
+</body>
+</html>
