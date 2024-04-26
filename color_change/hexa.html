@@ -58,6 +58,52 @@
         border-radius:7px;
         cursor: pointer;
       }
+      .toastms{
+         position: fixed;
+         background-color:#cbf769;
+         color:black;
+         top:30px;
+         right:20px;
+         height: 35px;
+         width:120px;
+         border-radius: 8px;
+         /* padding:1rem 2rem; */
+         padding:5px;
+         text-align:center;
+         font-size:18px;
+         box-shadow: 0  4px 8px 0 rgb(0,0,0,0.2) ;
+         margin:auto;
+         
+      }
+
+      @keyframes tost-in {
+        from{
+          transform:translateX(200px);
+          opacity:0;
+        }
+        to{
+          transform:translateX(0px);
+          opacity:1;
+        }
+      }
+
+      @keyframes tost-out {
+        from{
+          transform:translateX(0px);
+          opacity:1;
+        }
+        to{
+          transform:translateX(200px);
+          opacity:0;
+        }
+      }
+
+      .tost-in{
+        animation:tost-in 0.5s ease-in;
+      }
+      .tost-out{
+        animation:tost-out 0.5s ease-in;
+      }
 </style>
 <body id="root">
 
